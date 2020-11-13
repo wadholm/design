@@ -25,7 +25,11 @@
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
+
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+    <div class="auto alert">
+        <h1 class="auto">Alert!</h1>
+      </div>
     <div class="header" role="banner">
         <div class="container">
             <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
@@ -76,6 +80,7 @@
                         <span class="sr-only">{{ social.title }}</span>
                     </a>
                 {% endfor %}
+                <i class="fab fa-linkedin"></i>
             </div>
             <p>
                 En footer med lite text.

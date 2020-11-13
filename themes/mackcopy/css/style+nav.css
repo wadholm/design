@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fafafa;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 75%;
+    margin: auto;
+}
+
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    color: black;
+    padding: 0 2em;
+    text-decoration: none;
+}
+
+.site-header a, .site-header a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 12%;
+    float: left;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+.title {
+    padding-top: 1em;
+}
+
+.title h1 {
+    padding-bottom: 0;
+}
+
+/* Navbar*/
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    -webkit-transition: height 0.5s ease-in !important;
+    transition: height 0.5s ease-in !important;
+}
+
+#nav {
+    padding: 1em 0;
+    text-align: right;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0;
+    font-weight: bold;
+}
+
+#nav a:hover, #nav-toggle:hover {
+    text-decoration: underline;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+}
+
+.flash-img {
+    width: 100%;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.me {
+    float: left;
+    padding-right: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(100, 100, 100);
+}
+
+/*** BASIC LAYOUT: FOOTER ***/
+
+.footer {
+    background: #3E4B48;
+    color: #fafafa;
+}
+
+.footer a {
+    color: #f0f0f0;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3em 0;
+}
+
+.footer .social {
+    float: left;
+    padding: 1.5em 0 1.5em 1em;
+    font-size: 2rem;
+}
+
+/* Small devices */
+
+@media (max-width: 767px) {
+    #nav {
+        clear: both;
+        padding: 0;
+    }
+    #nav ul {
+        padding-bottom: 1em;
+    }
+    #nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+    #nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+    .js #nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .js #nav-toggle>* {
+        vertical-align: middle;
+    }
+}
