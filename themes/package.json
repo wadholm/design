@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass mack/scss/style.scss mack/css/style.css --no-source-map --watch",
-    "style": "sass mack/scss/style.scss mack/css/style.css --no-source-map",
-    "style-min": "sass mack/scss/style.scss mack/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass mack-sky/scss/style.scss mack-sky/css/style.css --no-source-map --watch",
+    "style": "sass mack-sky/scss/style.scss mack-sky/css/style.css --no-source-map",
+    "style-min": "sass mack-sky/scss/style.scss mack-sky/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

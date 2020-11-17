@@ -1,10 +1,20 @@
 ---
 Title: Kmom01
 Description: Part 1
+Template: kmom
 ---
 
 Kursmoment 1
 ==================
+
+* [kmom01](kmom01)
+* [kmom02](kmom02)
+* [kmom03](kmom03)
+* [kmom04](kmom04)
+* [kmom05](kmom05)
+* [kmom06](kmom06)
+* [kmom10](kmom10)
+
 
 Den första veckan på kursen design närmar sig sitt slut och det är dags att redovisa det första kursmomentet. Det har varit mycket nytt denna vecka, jag har själv ingen tidigare erfarenhet av ramverk eller CMS:er sen tidigare. Vi fick en hel del nya verktyg och tekniker i labbmiljön att jobba med inför denna kursen, jag började använda ColorZilla under htmlphp annars är allting nytt för mig. Jag fick kämpa lite med att få ner en ny version av php då den jag tidigare jobbat med var för gammal men efter lite jobb fick jag ordning på det.
 

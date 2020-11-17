@@ -1,0 +1,30 @@
+.landingpage {
+    display: grid;
+    gap: 1em;
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.kmom-box {
+    grid-column: span 1;
+    border: 2px solid #7889b7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.kmom-box.project {
+    grid-column: span 3;
+}
+
+@media (max-width: 767px) {
+    .landingpage h1,
+    .kmom-box,
+    .kmom-box.project {
+        grid-column: span 1;
+    }
+}

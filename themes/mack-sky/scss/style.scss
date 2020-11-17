@@ -7,3 +7,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'old';
 @import '../../shared/scss/base';
 @import 'report';
+@import 'kmom';
+
+.footer {
+    background-color: #7889b7;
+}

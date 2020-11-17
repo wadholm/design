@@ -12,7 +12,6 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
     width: 75%;
     margin: auto;
 }
@@ -22,7 +21,6 @@ body {
 .site-header {
     flex: 0 0 auto;
     color: black;
-    padding: 0 2em;
     text-decoration: none;
 }
 
@@ -32,10 +30,11 @@ body {
 }
 
 .logo-img {
-    width: 12%;
+    width: 120px;
     float: left;
     padding-right: 2em;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .title {
@@ -100,12 +99,10 @@ body {
 
 .main {
     flex: 1 0 auto;
-    padding: 2em;
+    margin-right: 2em;
+    padding: 1em;
 }
 
-h1 {
-    padding-bottom: 0.5em;
-}
 
 .flash-img {
     width: 100%;
@@ -115,8 +112,10 @@ h1 {
 }
 
 .me {
-    float: left;
+    width: 200px;
     padding-right: 2em;
+    padding-bottom: 1em;
+    float: left;
 }
 
 a {
@@ -137,6 +136,7 @@ a:hover {
 
 .footer a {
     color: #f0f0f0;
+    margin: 0.2em;
 }
 
 .footer a:hover {
@@ -157,6 +157,25 @@ a:hover {
 /* Small devices */
 
 @media (max-width: 767px) {
+
+    .logo-img {
+        width: 100px;
+    }
+    
+    .me {
+        width: 120px;
+        padding-right: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    .main {
+        margin-right: 0.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
     #nav {
         clear: both;
         padding: 0;
