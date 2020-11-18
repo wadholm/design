@@ -3,7 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
-Om mig - Malin
+Hej!
 ==========================
 ![me](%assets_url%/img/malinw.jpg){.me}
 Jag heter Malin Wadholm, det här är min portofoli för kursen Teknisk webbdesign och användbarhet på Blekinge Tekniska Högskola.

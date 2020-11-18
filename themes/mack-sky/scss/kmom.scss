@@ -1,14 +1,13 @@
 .landingpage-kmom {
     display: grid;
-    gap: 1em;
-    grid-template-columns: 200px auto;
+    gap: 0.2em;
+    grid-template-columns: 20% auto;
 }
 
 .landingpage-kmom h1 {
     grid-column: span 4;
     justify-self: center;
 }
-
 
 .landingpage-kmom ul {
     grid-column: span 1;
@@ -30,8 +29,24 @@
 
 @media (max-width: 767px) {
     .landingpage-kmom h1,
-    .landingpage-kmom ul,
     .kmom-content {
-        grid-column: span 1;
+        grid-column: span 4;
+    }
+
+    .landingpage-kmom h1 {
+        margin-top: 0;
+    }
+
+    .landingpage-kmom ul {
+        display: none;
+    }
+
+    .report-toggle {
+        grid-column: span 4;
+        justify-self: right;
+        
+        a {
+            margin: 0.1em;
+        }
     }
 }

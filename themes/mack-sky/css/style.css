@@ -6471,7 +6471,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  width: 75%;
   margin: auto;
 }
 
@@ -6526,7 +6525,7 @@ body {
 }
 
 #nav {
-  padding: 1em 0;
+  padding: 1em;
   text-align: right;
 }
 
@@ -6554,7 +6553,6 @@ body {
 /* Main */
 .main {
   flex: 1 0 auto;
-  margin-right: 2em;
   padding: 1em;
 }
 
@@ -6651,7 +6649,7 @@ a:hover {
     display: block;
     float: right;
     width: 2em;
-    margin: 0.6667em 0;
+    margin: 0.5em 0;
     font-size: 1.5rem;
     line-height: 2em;
     text-align: center;
@@ -6663,6 +6661,14 @@ a:hover {
   }
 }
 /* Header */
+.logo-img {
+  padding: 1em 2em;
+  width: 180px;
+}
+
+.title {
+  padding: 1em;
+}
 .title h1 {
   margin-bottom: 0.2em;
 }
@@ -6672,7 +6678,6 @@ a:hover {
 
 /* Main */
 .main {
-  margin-right: 2em;
   padding: 1em;
 }
 
@@ -6715,7 +6720,11 @@ li {
 /* Small devices */
 @media (max-width: 767px) {
   .logo-img {
-    width: 100px;
+    width: 120px;
+  }
+
+  .title h1 {
+    margin-top: 0;
   }
 
   .me {
@@ -6764,8 +6773,8 @@ li {
 }
 .landingpage-kmom {
   display: grid;
-  gap: 1em;
-  grid-template-columns: 200px auto;
+  gap: 0.2em;
+  grid-template-columns: 20% auto;
 }
 
 .landingpage-kmom h1 {
@@ -6793,11 +6802,28 @@ li {
 
 @media (max-width: 767px) {
   .landingpage-kmom h1,
-.landingpage-kmom ul,
 .kmom-content {
-    grid-column: span 1;
+    grid-column: span 4;
+  }
+
+  .landingpage-kmom h1 {
+    margin-top: 0;
+  }
+
+  .landingpage-kmom ul {
+    display: none;
+  }
+
+  .report-toggle {
+    grid-column: span 4;
+    justify-self: right;
+  }
+  .report-toggle a {
+    margin: 0.1em;
   }
 }
 .footer {
+  background-image: url("/../dbwebb/design/me/portfolio/assets/img/sky7.jpg");
   background-color: #7889b7;
+  background-size: cover;
 }

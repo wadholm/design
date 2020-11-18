@@ -1,6 +1,6 @@
 ---
 Logo: image/logo.png
-Tagline: My portfolio.
+Tagline: PORTFOLIO
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/wadholm/design

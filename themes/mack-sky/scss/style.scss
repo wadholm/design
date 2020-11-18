@@ -9,6 +9,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'report';
 @import 'kmom';
 
+
 .footer {
+    background-image: url('/../dbwebb/design/me/portfolio/assets/img/sky7.jpg');
     background-color: #7889b7;
+    background-size: cover;
 }
