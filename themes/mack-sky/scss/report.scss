@@ -1,6 +1,7 @@
 .landingpage {
     display: grid;
     gap: 1em;
+    padding: 0 4em;
 }
 
 .landingpage h1 {
@@ -10,7 +11,7 @@
 
 .kmom-box {
     grid-column: span 1;
-    border: 2px solid #7889b7;
+    border: 5px dotted #7889b7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +23,10 @@
 }
 
 @media (max-width: 767px) {
+    .landingpage {
+        padding: 0 1.4em;
+    }
+    
     .landingpage h1,
     .kmom-box,
     .kmom-box.project {
