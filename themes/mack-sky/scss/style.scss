@@ -8,7 +8,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/scss/base';
 @import 'report';
 @import 'kmom';
-
+@import 'homeindex';
 
 .footer {
     background-image: url('/../dbwebb/design/me/portfolio/assets/img/sky7.jpg');
@@ -17,41 +17,3 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     margin-top: 1.67em;
 }
 
-.landingpage-home {
-    display: grid;
-    gap: 0.5em;
-    padding: 0 4em;
-}
-
-.landingpage-home h1 {
-    grid-column: 2;
-}
-
-.landingpage-home p {
-    grid-column: span 1;
-}
-
-.me {
-    grid-column: 1;
-}
-
-.landingpage-index {
-    display: grid;
-    gap: 0.5em;
-    padding: 0 4em;
-}
-
-.landingpage-index h1 {
-    grid-column: 1;
-}
-
-.landingpage-index p {
-    grid-column: span 1;
-}
-
-@media (max-width: 767px) {
-    .landingpage-home,
-    .landingpage-index {
-        padding: 0 1.4em;
-    }
-}

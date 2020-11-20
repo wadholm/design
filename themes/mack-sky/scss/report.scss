@@ -1,7 +1,8 @@
 .landingpage {
     display: grid;
-    gap: 1em;
+    gap: 1em 2em;
     padding: 0 4em;
+    grid-template-columns: 31.3% 31.3% 31.3%;
 }
 
 .landingpage h1 {
@@ -25,6 +26,7 @@
 @media (max-width: 767px) {
     .landingpage {
         padding: 0 1.4em;
+        grid-template-columns: 100%;
     }
     
     .landingpage h1,
