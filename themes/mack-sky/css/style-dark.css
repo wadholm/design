@@ -6953,21 +6953,37 @@ li {
 }
 html,
 body {
-  background-color: #fafafa;
-  color: black;
+  background-color: #212121;
+  color: #fafafa;
 }
 
 .site-header a,
-.site-header a:visited {
-  color: black;
+.site-header a:visited,
+a {
+  color: #fafafa;
+}
+
+.site-header a:hover {
+  color: #7889b7;
+}
+
+.logo-img {
+  filter: invert(95%);
+}
+
+.flash-img {
+  filter: grayscale(100%);
 }
 
 .footer {
-  background-image: url("../../../assets/img/sky7.jpg");
+  background-image: url("../../../assets/img/skybw.jpg");
   background-color: #7889b7;
   background-size: cover;
   margin-top: 1.67em;
 }
 .footer a {
-  color: #f0f0f0;
+  color: #212121;
+}
+.footer a:hover {
+  color: #0a0a0a;
 }

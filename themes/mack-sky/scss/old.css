@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     background-color: #fafafa;
+    color: black;
 }
 
 body {
@@ -93,6 +94,7 @@ body {
 #nav-toggle {
     display: none;
 }
+
 
 
 /* Main */
