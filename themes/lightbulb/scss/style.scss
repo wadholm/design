@@ -1,0 +1,49 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import 'old';
+@import 'nav';
+@import '../../shared/scss/base';
+@import 'variables';
+@import 'report';
+@import 'kmom';
+@import 'homeindex';
+
+html,
+body {
+    background-color: $background-color;
+    color: $font-color;
+}
+
+.site-header {
+    background-image: url('../../../assets/img/bulb2.jpg');
+    background-size: cover;
+    border-bottom: 3px solid $line;
+
+    a,
+    a:visited {
+        color: $title-color;
+    }
+}
+
+h1 {
+    color: $title-color;
+}
+
+
+a:hover {
+    color: $hover-color;
+}
+
+.footer {
+    background: $footer-color;
+    background-size: cover;
+    margin-top: 1.67em;
+
+    a {
+        color: $footer-link-color;
+    }
+}
