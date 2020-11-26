@@ -6876,7 +6876,7 @@ li {
 
 .landingpage-kmom ul {
   grid-column: span 1;
-  grid-row: 2/10;
+  grid-row: 2/20;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6958,6 +6958,110 @@ li {
     padding: 0 1.4em;
   }
 }
+h3 {
+  font-size: 1.3em;
+}
+
+.homepage {
+  width: 600px;
+}
+
+.davines {
+  display: block;
+  border-spacing: 4px;
+  border-collapse: separate;
+  width: 60%;
+}
+.davines .element1 {
+  height: 50px;
+  width: 50px;
+  background-color: #333333;
+}
+.davines .element2 {
+  height: 50px;
+  width: 50px;
+  background-color: #4e4b4a;
+}
+.davines .element3 {
+  height: 50px;
+  width: 50px;
+  background-color: #827d7c;
+}
+.davines .element4 {
+  height: 50px;
+  width: 50px;
+  background-color: #dfddde;
+}
+.davines .element5 {
+  height: 50px;
+  width: 50px;
+  background-color: #f4f4f6;
+}
+
+.lernberg {
+  display: block;
+  border-spacing: 4px;
+  border-collapse: separate;
+  width: 60%;
+}
+.lernberg .element1 {
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+}
+.lernberg .element2 {
+  height: 50px;
+  width: 50px;
+  background-color: #4e4b4a;
+}
+.lernberg .element3 {
+  height: 50px;
+  width: 50px;
+  background-color: #cfcfcf;
+}
+.lernberg .element4 {
+  height: 50px;
+  width: 50px;
+  background-color: #f4f4f4;
+}
+.lernberg .element5 {
+  height: 50px;
+  width: 50px;
+  background-color: #ffff;
+}
+
+.leestaff {
+  display: block;
+  border-spacing: 4px;
+  border-collapse: separate;
+  width: 60%;
+}
+.leestaff .element1 {
+  height: 50px;
+  width: 50px;
+  background-color: #e19;
+}
+.leestaff .element2 {
+  height: 50px;
+  width: 50px;
+  background-color: #f625c6;
+}
+.leestaff .element3 {
+  height: 50px;
+  width: 50px;
+  background-color: #fc9cd6;
+}
+.leestaff .element4 {
+  height: 50px;
+  width: 50px;
+  background-color: #fab7e0;
+}
+.leestaff .element5 {
+  height: 50px;
+  width: 50px;
+  background-color: #f7ceea;
+}
+
 html,
 body {
   background-color: #16191e;
