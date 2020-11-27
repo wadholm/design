@@ -6876,7 +6876,7 @@ li {
 
 .landingpage-kmom ul {
   grid-column: span 1;
-  grid-row: 2/20;
+  grid-row: 2/100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6962,8 +6962,14 @@ h3 {
   font-size: 1.3em;
 }
 
+h4 {
+  font-size: 1.1em;
+  font-weight: 100;
+}
+
 .homepage {
   width: 600px;
+  padding-top: 1em;
 }
 
 .davines {
@@ -7050,6 +7056,7 @@ h3 {
   height: 50px;
   width: 50px;
   background-color: #fc9cd6;
+  background-color: #e19;
 }
 .leestaff .element4 {
   height: 50px;
