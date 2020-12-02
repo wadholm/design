@@ -21,7 +21,7 @@ body {
 }
 
 .site-header {
-    background-image: url('../../../assets/img/bulb2.jpg');
+    background-image: url('../../../image/bulb2.jpg?width=50%');
     background-size: cover;
     border-bottom: 3px solid $line;
 
@@ -40,8 +40,11 @@ a:hover {
     color: $hover-color;
 }
 
-img {
-    width: 100%;
+img,
+embed,
+object,
+video {
+    max-width: 100%;
 }
 
 .footer {
