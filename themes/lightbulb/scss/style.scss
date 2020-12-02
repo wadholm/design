@@ -12,6 +12,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'kmom';
 @import 'homeindex';
 @import 'analysis';
+@import 'gallery';
 
 html,
 body {
@@ -37,6 +38,10 @@ h1 {
 
 a:hover {
     color: $hover-color;
+}
+
+img {
+    width: 100%;
 }
 
 .footer {

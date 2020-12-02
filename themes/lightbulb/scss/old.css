@@ -127,6 +127,10 @@ a:hover {
     color: #8aa2ce;
 }
 
+img {
+    width: 100%;
+}
+
 /*** BASIC LAYOUT: FOOTER ***/
 
 .footer {

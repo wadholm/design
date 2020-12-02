@@ -6580,6 +6580,10 @@ a:hover {
   color: #8aa2ce;
 }
 
+img {
+  width: 100%;
+}
+
 /*** BASIC LAYOUT: FOOTER ***/
 .footer {
   background: #3E4B48;
@@ -6804,6 +6808,7 @@ li {
   }
 
   .title h1 {
+    font-size: 1.6em;
     margin-top: 0;
   }
 
@@ -7064,6 +7069,22 @@ h4 {
   background-color: #f7ceea;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 1em 4em;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    padding: 1em 1.4em;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery div {
+    grid-column: span 1;
+  }
+}
 html,
 body {
   background-color: #fafafa;
@@ -7086,6 +7107,10 @@ h1 {
 
 a:hover {
   color: #024954;
+}
+
+img {
+  width: 100%;
 }
 
 .footer {

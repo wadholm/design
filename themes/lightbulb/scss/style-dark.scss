@@ -12,6 +12,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'kmom';
 @import 'homeindex';
 @import 'analysis';
+@import 'gallery';
 
 html,
 body {
@@ -58,6 +59,10 @@ body {
     filter: opacity(90%);
 }
 
+.gallery-img {
+    filter: hue-rotate(10deg) grayscale(0.1);
+}
+
 .landingpage {
     a {
         color: $font-color;
@@ -77,6 +82,10 @@ body {
         color: $hover-color;
         text-decoration: dashed;
     }
+}
+
+img {
+    width: 100%;
 }
 
 .footer {
