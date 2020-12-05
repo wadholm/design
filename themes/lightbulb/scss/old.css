@@ -101,7 +101,9 @@ body {
 
 .main {
     flex: 1 0 auto;
-    padding: 1em;
+    padding: 2em 0;
+    width: 75%;
+    margin: auto;
 }
 
 
@@ -170,10 +172,6 @@ img {
         width: 120px;
         padding-right: 1em;
         padding-bottom: 0.5em;
-    }
-
-    .main {
-        margin-right: 0.1em;
     }
 
     p {

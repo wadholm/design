@@ -6555,7 +6555,9 @@ body {
 /* Main */
 .main {
   flex: 1 0 auto;
-  padding: 1em;
+  padding: 2em 0;
+  width: 75%;
+  margin: auto;
 }
 
 .flash-img {
@@ -6620,10 +6622,6 @@ img {
     width: 120px;
     padding-right: 1em;
     padding-bottom: 0.5em;
-  }
-
-  .main {
-    margin-right: 0.1em;
   }
 
   p {
@@ -6763,8 +6761,9 @@ img {
 }
 
 /* Main */
-.main {
-  padding: 1em;
+.main-home {
+  width: 75%;
+  margin: auto;
 }
 
 /*** BASIC LAYOUT: FOOTER ***/
@@ -6812,14 +6811,19 @@ li {
     margin-top: 0;
   }
 
+  .main {
+    padding: 0;
+  }
+
+  .main-home {
+    width: 90%;
+    margin-top: 0;
+  }
+
   .me {
     width: 120px;
     padding-right: 1em;
     padding-bottom: 0.5em;
-  }
-
-  .main {
-    margin-right: 0.1em;
   }
 
   p {
@@ -6829,7 +6833,6 @@ li {
 .landingpage {
   display: grid;
   gap: 1em 2em;
-  padding: 0 4em;
   grid-template-columns: 31.3% 31.3% 31.3%;
 }
 
@@ -6853,7 +6856,6 @@ li {
 
 @media (max-width: 767px) {
   .landingpage {
-    padding: 0 1.4em;
     grid-template-columns: 100%;
   }
 
@@ -6867,7 +6869,6 @@ li {
   display: grid;
   gap: 0.2em;
   grid-template-columns: 16% auto;
-  padding: 0 4em;
 }
 
 .landingpage-kmom h1 {
@@ -6913,10 +6914,6 @@ li {
 }
 
 @media (max-width: 767px) {
-  .landingpage-kmom {
-    padding: 0 1.4em;
-  }
-
   .landingpage-kmom h1 {
     grid-column: span 2;
     margin-top: 0;
@@ -6945,7 +6942,6 @@ li {
 .landingpage-home {
   display: grid;
   gap: 0.5em;
-  padding: 0 4em;
 }
 
 .landingpage-home h1 {
@@ -6963,7 +6959,6 @@ li {
 .landingpage-index {
   display: grid;
   gap: 0.5em;
-  padding: 0 4em;
 }
 
 .landingpage-index h1 {
@@ -6974,12 +6969,6 @@ li {
   grid-column: span 1;
 }
 
-@media (max-width: 767px) {
-  .landingpage-home,
-.landingpage-index {
-    padding: 0 1.4em;
-  }
-}
 h3 {
   font-size: 1.3em;
 }

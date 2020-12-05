@@ -2,7 +2,6 @@
 .landingpage-home {
     display: grid;
     gap: 0.5em;
-    padding: 0 4em;
 }
 
 .landingpage-home h1 {
@@ -20,7 +19,6 @@
 .landingpage-index {
     display: grid;
     gap: 0.5em;
-    padding: 0 4em;
 }
 
 .landingpage-index h1 {
@@ -31,9 +29,3 @@
     grid-column: span 1;
 }
 
-@media (max-width: 767px) {
-    .landingpage-home,
-    .landingpage-index {
-        padding: 0 1.4em;
-    }
-}
