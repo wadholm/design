@@ -13,7 +13,8 @@
     "style-light": "sass lightbulb/scss/style.scss lightbulb/css/style.css --no-source-map",
     "style-light-min": "sass lightbulb/scss/style.scss lightbulb/css/style.min.css --no-source-map --style compressed",
     "style-dark": "sass lightbulb/scss/style-dark.scss lightbulb/css/style-dark.css --no-source-map",
-    "style-dark-min": "sass lightbulb/scss/style-dark.scss lightbulb/css/style-dark.min.css --no-source-map --style compressed"
+    "style-dark-min": "sass lightbulb/scss/style-dark.scss lightbulb/css/style-dark.min.css --no-source-map --style compressed",
+    "style-shared": "npm run shared/scss/base.scss --no-source-map"
   },
   "keywords": [],
   "author": "",

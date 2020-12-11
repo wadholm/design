@@ -7,7 +7,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'old';
 @import 'nav-dark';
 @import '../../shared/scss/base';
+@import 'typography';
 @import 'variables-dark';
+@import 'media';
 @import 'report';
 @import 'kmom';
 @import 'homeindex';
@@ -41,7 +43,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../image/bulb2.jpg?width=50%');
+    background-image: url('../../../image/bulb2.jpg?width=40%');
     filter: hue-rotate(200deg) invert(100%) opacity(80%);
     background-size: cover;
 }

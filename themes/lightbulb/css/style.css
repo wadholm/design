@@ -6552,6 +6552,15 @@ body {
   display: none;
 }
 
+#navrep:hover {
+  color: #024954;
+  text-decoration: none;
+}
+
+#navrep {
+  display: none;
+}
+
 /* Main */
 .main {
   flex: 1 0 auto;
@@ -6569,7 +6578,7 @@ body {
 
 .me {
   width: 200px;
-  padding-right: 2em;
+  margin-right: 2em;
   float: left;
 }
 
@@ -6583,7 +6592,7 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 200px;
 }
 
 /*** BASIC LAYOUT: FOOTER ***/
@@ -6619,7 +6628,7 @@ img {
   }
 
   .me {
-    width: 120px;
+    width: 100px;
     padding-right: 1em;
     padding-bottom: 0.5em;
   }
@@ -6822,14 +6831,42 @@ li {
 
   .me {
     width: 120px;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
   }
 
   p {
     font-size: 0.9em;
   }
 }
+html {
+  font-size: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-bottom: 1.68em;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-style: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabin", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
 .landingpage {
   display: grid;
   gap: 1em 2em;
@@ -6916,7 +6953,7 @@ li {
 @media (max-width: 767px) {
   .landingpage-kmom h1 {
     grid-column: span 2;
-    margin-top: 0;
+    margin-top: 0.4em;
   }
 
   .landingpage-kmom p {
@@ -6981,6 +7018,10 @@ h4 {
 .homepage {
   width: 600px;
   padding-top: 1em;
+}
+
+table {
+  display: block;
 }
 
 .davines {
@@ -7080,11 +7121,32 @@ h4 {
   background-color: #f7ceea;
 }
 
+@media (max-width: 767px) {
+  .davines {
+    width: 600%;
+  }
+
+  .leestaff {
+    width: 600%;
+  }
+
+  .lernberg {
+    width: 600%;
+  }
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
   padding: 1em 4em;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+.block {
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -7103,7 +7165,7 @@ body {
 }
 
 .site-header {
-  background-image: url("../../../image/bulb2.jpg?width=50%");
+  background-image: url("../../../image/bulb2.jpg?width=40%");
   background-size: cover;
   border-bottom: 3px solid #038ca1;
 }

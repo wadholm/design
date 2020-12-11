@@ -20,7 +20,7 @@
 }
 
 #nav {
-    padding: 1em;
+    padding: 0.5em;
     text-align: right;
 }
 
@@ -37,8 +37,16 @@
     font-weight: bold;
 }
 
-#nav a:hover, #nav-toggle:hover {
+#nav a {
+    color: rgb(0, 0, 0);
+    padding: 0.5em;
+}
+
+#nav a:hover, #nav-toggle:hover #nav li:hover {
+    color: #024954;
     text-decoration: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 
 #nav-toggle {
@@ -76,5 +84,10 @@
     }
     .js #nav-toggle>* {
         vertical-align: middle;
+    }
+
+    #nav a:hover, #nav-toggle:hover #nav li:hover {
+        border-top: none;
+        border-bottom: none;
     }
 }

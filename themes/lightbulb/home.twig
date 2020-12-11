@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="sv" class="no-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,21 +21,21 @@
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End -->
     {% if config.session.theme == "dark" %}
-        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.min.css" type="text/css" />
     {% else %}
-        <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
     {% endif %}
 
 </head>
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <div class="site-header">
         <div class="site-header-inside">
-        <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+            <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
             <span class="sr-only">Toggle Menu</span>
         </a>
         <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-            <img class="logo-img" src="{{ base_url }}/image/logo3.png">
+            <img class="logo-img" src="{{ base_url }}/image/logo3.png?width=40%" alt="logo">
             <a href="{{ "index"|link }}">
                 <h1>{{ site_title }}</h1>
                 {{ pages["_meta"].meta.tagline|markdown }}
@@ -54,7 +54,7 @@
           </div>
         </div>
     </div>
-    <div class="main-home" id="main" role="main">
+    <div class="main" id="main" role="main">
         <div class="container">
             <div class="landingpage-home">
             {{ content }}

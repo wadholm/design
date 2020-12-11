@@ -15,7 +15,7 @@ Min TIL för detta kursmoment är Dev Tools Networks, jag har inte använt det t
 
 Här kommer min valda video, Mikeal förklarar felsökning med gummianka, det kan man ju inte bli annat än glad av! 
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/eUBMCd7Tj6Q" frameborder="0" allowfullscreen></iframe>
+    <iframe title="video" src="https://www.youtube.com/embed/eUBMCd7Tj6Q" frameborder="0" allowfullscreen></iframe>
 </div>
 
 

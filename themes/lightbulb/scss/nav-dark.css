@@ -20,7 +20,7 @@
 }
 
 #nav {
-    padding: 1em;
+    padding: 0.5em;
     text-align: right;
 }
 
@@ -39,11 +39,17 @@
 
 #nav a {
     color: #d1d0d1;
+    padding: 0.5em;
 }
 
-#nav a:hover, #nav-toggle:hover {
+#nav a:hover, #nav-toggle:hover #nav li:hover {
     text-decoration: none;
-    color: #35749D;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+#nav-toggle:hover {
+    color: #35749d;
 }
 
 #nav-toggle {
@@ -81,5 +87,10 @@
     }
     .js #nav-toggle>* {
         vertical-align: middle;
+    }
+    #nav a:hover, #nav-toggle:hover #nav li:hover {
+        color: #35749d;
+        border-top: none;
+        border-bottom: none;
     }
 }

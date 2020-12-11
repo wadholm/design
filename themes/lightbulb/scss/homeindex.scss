@@ -14,11 +14,12 @@
 
 .me {
     grid-column: 1;
+    box-shadow: 20px 20px $shadow-color;
 }
 
 .landingpage-index {
     display: grid;
-    gap: 0.5em;
+    gap: 1em;
 }
 
 .landingpage-index h1 {
@@ -27,5 +28,25 @@
 
 .landingpage-index p {
     grid-column: span 1;
+}
+
+@media (max-width: 767px) { 
+    .main {
+        width: 85%;
+    }
+
+    .me {
+        width: 100px;
+        box-shadow: 10px 10px $shadow-color;
+    }
+
+    h1 {
+        font-size: 1.67em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
 }
 
