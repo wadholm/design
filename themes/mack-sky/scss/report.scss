@@ -2,16 +2,16 @@
     display: grid;
     gap: 1em 2em;
     padding: 0 4em;
-    grid-template-columns: 31.3% 31.3% 31.3%;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .landingpage h1 {
-    grid-column: span 3;
+    grid-column: span 6;
     justify-self: center;
 }
 
 .kmom-box {
-    grid-column: span 1;
+    grid-column: span 2;
     border: 5px dotted #7889b7;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,10 @@
 }
 
 .kmom-box.project {
+    grid-column: span 6;
+}
+
+.kmom-box.two {
     grid-column: span 3;
 }
 

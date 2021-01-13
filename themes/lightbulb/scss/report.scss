@@ -1,16 +1,16 @@
 .landingpage {
     display: grid;
     gap: 2em 2em;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .landingpage h1 {
-    grid-column: span 3;
+    grid-column: span 6;
     justify-self: center;
 }
 
 .kmom-box {
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,10 @@
 }
 
 .kmom-box.project {
+    grid-column: span 6;
+}
+
+.kmom-box.two {
     grid-column: span 3;
 }
 
@@ -45,7 +49,8 @@
     
     .landingpage h1,
     .kmom-box,
-    .kmom-box.project {
+    .kmom-box.project,
+    .kmom-box.two {
         grid-column: span 1;
         text-align: center;
         max-width: 80%;

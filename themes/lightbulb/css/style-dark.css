@@ -6544,7 +6544,6 @@ body {
 }
 
 #nav a:hover, #nav-toggle:hover {
-  color: #024954;
   text-decoration: none;
 }
 
@@ -6564,7 +6563,7 @@ body {
 /* Main */
 .main {
   flex: 1 0 auto;
-  padding: 2em 0;
+  padding: 1em 0;
   width: 75%;
   margin: auto;
 }
@@ -6628,9 +6627,7 @@ img {
   }
 
   .me {
-    width: 120px;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
+    width: 100px;
   }
 
   p {
@@ -6694,7 +6691,7 @@ img {
 }
 
 #nav {
-  padding: 1em;
+  padding: 0.5em;
   text-align: right;
 }
 
@@ -6713,11 +6710,17 @@ img {
 
 #nav a {
   color: #d1d0d1;
+  padding: 0.5em;
 }
 
-#nav a:hover, #nav-toggle:hover {
+#nav a:hover, #nav-toggle:hover #nav li:hover {
   text-decoration: none;
-  color: #35749D;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+#nav-toggle:hover {
+  color: #35749d;
 }
 
 #nav-toggle {
@@ -6759,6 +6762,12 @@ img {
 
   .js #nav-toggle > * {
     vertical-align: middle;
+  }
+
+  #nav a:hover, #nav-toggle:hover #nav li:hover {
+    color: #35749d;
+    border-top: none;
+    border-bottom: none;
   }
 }
 /* Header */
@@ -6835,7 +6844,7 @@ li {
   }
 
   .me {
-    width: 120px;
+    width: 100px;
     margin-right: 1em;
     margin-bottom: 0.5em;
   }
@@ -6872,10 +6881,35 @@ li {
   list-style-type: none;
 }
 
+/* Small devices */
+@media (max-width: 767px) {
+  .logo-img {
+    width: 100px;
+    padding: 0 1em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .main {
+    width: 85%;
+  }
+
+  .me {
+    width: 100px;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
 .landingpage {
   display: grid;
-  gap: 1em 2em;
-  grid-template-columns: 31.3% 31.3% 31.3%;
+  gap: 2em 2em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .landingpage h1 {
@@ -6885,11 +6919,24 @@ li {
 
 .kmom-box {
   grid-column: span 1;
-  border: 5px dotted #065489;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  width: 100%;
+  box-shadow: 10px 10px #083252;
+  border: 2px solid #35749d;
+}
+.kmom-box .box-header {
+  border-bottom: 2px solid #35749d;
+  background-color: #0a0a0ab9;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.kmom-box .box-container {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .kmom-box.project {
@@ -6899,12 +6946,16 @@ li {
 @media (max-width: 767px) {
   .landingpage {
     grid-template-columns: 100%;
+    gap: 1em 2em;
   }
 
   .landingpage h1,
 .kmom-box,
 .kmom-box.project {
     grid-column: span 1;
+    text-align: center;
+    max-width: 80%;
+    justify-self: center;
   }
 }
 .landingpage-kmom {
@@ -6924,7 +6975,7 @@ li {
   flex-direction: column;
   align-items: center;
   font-size: 1.2em;
-  border-right: 5px dotted #065489;
+  border-right: 2px solid #35749d;
   margin-right: 1em;
   padding-right: 1em;
 }
@@ -6996,11 +7047,12 @@ li {
 
 .me {
   grid-column: 1;
+  box-shadow: 20px 20px #083252;
 }
 
 .landingpage-index {
   display: grid;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .landingpage-index h1 {
@@ -7011,6 +7063,24 @@ li {
   grid-column: span 1;
 }
 
+@media (max-width: 767px) {
+  .main {
+    width: 85%;
+  }
+
+  .me {
+    width: 100px;
+    box-shadow: 10px 10px #083252;
+  }
+
+  h1 {
+    font-size: 1.67em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
 h3 {
   font-size: 1.3em;
 }

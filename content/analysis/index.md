@@ -31,4 +31,19 @@ Analysrapporter för design
         <p>Design principles. </p>
     </div>
 </div>
+<div class="kmom-box two">
+    <div class="box-header">
+        <a href="analysis/10_webbplatsdesign"><h2>Trends. </h2></a>
+    </div>
+    <div class="box-container">
+    <p>Current trends in web design. </p>
+    </div>
+</div>
+<div class="kmom-box two">
+    <div class="box-header">
+        <a href="analysis/11_design-och-webbplatser"><h2>Optional. </h2></a>
+    </div>
+    <div class="box-container">
+    <p>Design principles for project. </p>
+    </div>
 </div>

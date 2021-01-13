@@ -6544,7 +6544,6 @@ body {
 }
 
 #nav a:hover, #nav-toggle:hover {
-  color: #024954;
   text-decoration: none;
 }
 
@@ -6564,7 +6563,7 @@ body {
 /* Main */
 .main {
   flex: 1 0 auto;
-  padding: 2em 0;
+  padding: 1em 0;
   width: 75%;
   margin: auto;
 }
@@ -6629,8 +6628,6 @@ img {
 
   .me {
     width: 100px;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
   }
 
   p {
@@ -6694,7 +6691,7 @@ img {
 }
 
 #nav {
-  padding: 1em;
+  padding: 0.5em;
   text-align: right;
 }
 
@@ -6711,8 +6708,16 @@ img {
   font-weight: bold;
 }
 
-#nav a:hover, #nav-toggle:hover {
+#nav a {
+  color: rgb(0, 0, 0);
+  padding: 0.5em;
+}
+
+#nav a:hover, #nav-toggle:hover #nav li:hover {
+  color: #024954;
   text-decoration: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 
 #nav-toggle {
@@ -6754,6 +6759,11 @@ img {
 
   .js #nav-toggle > * {
     vertical-align: middle;
+  }
+
+  #nav a:hover, #nav-toggle:hover #nav li:hover {
+    border-top: none;
+    border-bottom: none;
   }
 }
 /* Header */
@@ -6830,7 +6840,7 @@ li {
   }
 
   .me {
-    width: 120px;
+    width: 100px;
     margin-right: 1em;
     margin-bottom: 0.5em;
   }
@@ -6869,8 +6879,8 @@ li {
 
 .landingpage {
   display: grid;
-  gap: 1em 2em;
-  grid-template-columns: 31.3% 31.3% 31.3%;
+  gap: 2em 2em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .landingpage h1 {
@@ -6880,11 +6890,24 @@ li {
 
 .kmom-box {
   grid-column: span 1;
-  border: 5px dotted #46c7db;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  width: 100%;
+  box-shadow: 10px 10px #98dfef;
+  border: 2px solid #038ca1;
+}
+.kmom-box .box-header {
+  border-bottom: 2px solid #038ca1;
+  background-color: #98dfef25;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.kmom-box .box-container {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .kmom-box.project {
@@ -6894,12 +6917,16 @@ li {
 @media (max-width: 767px) {
   .landingpage {
     grid-template-columns: 100%;
+    gap: 1em 2em;
   }
 
   .landingpage h1,
 .kmom-box,
 .kmom-box.project {
     grid-column: span 1;
+    text-align: center;
+    max-width: 80%;
+    justify-self: center;
   }
 }
 .landingpage-kmom {
@@ -6919,7 +6946,7 @@ li {
   flex-direction: column;
   align-items: center;
   font-size: 1.2em;
-  border-right: 5px dotted #46c7db;
+  border-right: 2px solid #038ca1;
   margin-right: 1em;
   padding-right: 1em;
 }
@@ -6991,11 +7018,12 @@ li {
 
 .me {
   grid-column: 1;
+  box-shadow: 20px 20px #98dfef;
 }
 
 .landingpage-index {
   display: grid;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .landingpage-index h1 {
@@ -7006,6 +7034,24 @@ li {
   grid-column: span 1;
 }
 
+@media (max-width: 767px) {
+  .main {
+    width: 85%;
+  }
+
+  .me {
+    width: 100px;
+    box-shadow: 10px 10px #98dfef;
+  }
+
+  h1 {
+    font-size: 1.67em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
 h3 {
   font-size: 1.3em;
 }
